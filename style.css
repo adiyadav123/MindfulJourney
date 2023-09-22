@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+::selection {
+  color: var(--color-1);
+  background-color: var(--color-2);
+}
+:root {
+  --color-1: #5e8cba;
+  --color-2: #253d55;
+  --color-3: #8ea1b5;
+  --trans-bg: #e3e6e8ba;
+  --container-back: #cfdce8;
+  --stroke-color: #253d55;
+}
+.light{
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/* NAV CUSTOMISATION */
+
+.nav {
+  background-color: var(--trans-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+/* LOGO AND TITLE  */
+.branding {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+.branding h1 {
+  color: var(--color-3);
+}
+/* LOGO */
+.girl {
+  margin-right: 10px;
+  height: 5vh;
+  width: auto;
+  border-radius: 50%;
+}
+/* LINKS */
+.links {
+  width: 40%;
+}
+.links ul {
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-around;
+}
+.links ul li {
+  position: relative;
+  list-style-type: none;
+}
+.links ul li a {
+  color: var(--color-3);
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+.links ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--color-3);
+  width: 0%;
+  transition: all ease 0.5s;
+}
+.links ul li:hover::after {
+  width: 100%;
+  background-color: #000000;
+}
+.links ul li:hover a {
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+/* HOMEPAGE CUSTOMISATION  */
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: #8ECDDD; */
+  justify-content: center;
+  background-color: var(--container-back);
+}
+
+.container .text {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  padding-left: 100px;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+.container .text > h1 {
+  /* background-color: red; */
+  color: var(--stroke-color);
+  font-size: 40px;
+}
+.container .text > p {
+  margin-top: 10px;
+  width: 100%;
+  /* background-color: green; */
+}
+.stroke {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--stroke-color);
+}
+
+.container .img {
+  /* background-color: rebeccapurple; */
+  width: 50%;
+  height: 100%;
+  background-image: url("./assets/boy_bg.png");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border-radius: 30%;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.container .img:hover {
+  transform:translateY(-10px)
+}
+
+
+
+
+
+
+
+
+
+
+/* SOFTWARE PAGE */
+
+.software {
+  height: 110vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.software .head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+.software .img {
+    margin-top: -40px;
+  width: 100%;
+  height: 70vh;
+}
+.software .img img {
+  height: 100%;
+  width: 100%;
+  transition: all ease 0.5s;
+}
+
+.software .img img:hover {
+    transform:translateY(-10px)
+
+}
+
+.down_button{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+.down_button .download{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px ;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--color-2);
+    background-color: var(--color-2);
+    transition: all ease 0.5s;
+}
+
+.down_button .download:hover {
+    box-shadow: 0 0 30px var(--color-2);
+}
+
+.down_button .download a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.9px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* ABOUT US PAGE  */
+
+.about{
+  height: 100vh;
+}
+.starter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.starter .img img{
+  position: absolute;
+  right: 0;
+  margin-top: -100px;
+  margin-right: -10px;
+}
