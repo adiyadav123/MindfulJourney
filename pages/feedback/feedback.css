@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background-color: var(--container-back);
 }
 
 /* GLOBAL VARIABLES  */
@@ -42,6 +43,10 @@ body {
 .stroke-light{
   color: transparent;
   -webkit-text-stroke: 1px #000000;
+}
+.stroke{
+    color: transparent;
+    -webkit-text-stroke: 2px var(--stroke-color);
 }
 .bg-yellow-color-black{
   padding: 5px 10px;
@@ -175,3 +180,19 @@ body {
 
 
 
+
+
+
+/* CONTAINER MODIFICATION  */
+
+.container {
+    height: 400px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--trans-bg);
+    border-radius: 15px;
+}
