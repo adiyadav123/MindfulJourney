@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* GLOBAL VARIABLES  */
+
+::selection {
+  color: var(--color-1);
+  background-color: var(--color-2);
+}
+:root {
+  --color-1: #5e8cba;
+  --color-2: #253d55;
+  --color-3: #8ea1b5;
+  --trans-bg: #e3e6e8ba;
+  --container-back: #cfdce8;
+  --stroke-color: #253d55;
+  --yellow-bg: #FFBB5C;
+}
+.light{
+  font-weight: 400;
+}
+.italic{
+  font-style: italic;
+}
+.stroke-light{
+  color: transparent;
+  -webkit-text-stroke: 1px #000000;
+}
+.bg-yellow-color-black{
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgb(232, 231, 231);
+  background-color: var(--yellow-bg);
+  color: #000000;
+  transition: all ease 0.5s;
+}
+.bg-yellow-color-black:hover{
+  transform: translateX(-10px);
+}
+.float-hover-one, .float-hover-two, .float-hover-three, .float-hover-four {
+  transition: all ease 0.5s;
+  box-shadow: 0 0 30px rgb(232, 231, 231);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.float-hover-one{
+  background-image: url('./assets/about-back/kaveesh.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.float-hover-two{
+  background-image: url('./assets/about-back/aditya.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.float-hover-three{
+  background-image: url('./assets/about-back/shrinjani.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.float-hover-four{
+  background-image: url('./assets/about-back/anay.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.float-hover-one:hover, .float-hover-two:hover, .float-hover-three:hover, .float-hover-four:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 0 50px rgb(232, 231, 231);
+}
+
+
+
+
+
+
+
+
+/* NAV CUSTOMISATION */
+
+.nav {
+  background-color: var(--trans-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+/* LOGO AND TITLE  */
+.branding {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 50px;
+}
+.branding h1 {
+  color: var(--color-3);
+}
+/* LOGO */
+.girl {
+  margin-right: 10px;
+  height: 5vh;
+  width: auto;
+  border-radius: 50%;
+}
+/* LINKS */
+.links {
+  width: 40%;
+}
+.links ul {
+  /* width: 50%; */
+  display: flex;
+  justify-content: space-around;
+}
+.links ul li {
+  position: relative;
+  list-style-type: none;
+}
+.links ul li a {
+  color: var(--color-3);
+  transition: all ease 0.3s;
+  text-decoration: none;
+}
+.links ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: var(--color-3);
+  width: 0%;
+  transition: all ease 0.5s;
+}
+.links ul li:hover::after {
+  width: 100%;
+  background-color: #000000;
+}
+.links ul li:hover a {
+  color: #000000;
+}
+
+
+
+
