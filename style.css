@@ -278,7 +278,7 @@ body {
 /* ABOUT US PAGE  */
 
 .about{
-  height: 100vh;
+  height: 110vh;
 }
 .about_text{
   text-align: center;
@@ -296,6 +296,7 @@ body {
 }
 
 .creators{
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -315,6 +316,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .kaveesh img, .aditya img, .anay img, .shrinjani img {
   height: 50%;
