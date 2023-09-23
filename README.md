@@ -3,7 +3,7 @@
 
 <br>
 
-> It is made for desktop and laptop.
+> It is made up for desktop and laptop.
 
  <br>
 
