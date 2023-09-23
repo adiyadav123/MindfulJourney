@@ -186,7 +186,7 @@ body {
 /* CONTAINER MODIFICATION  */
 
 .container {
-    height: 400px;
+    height: auto;
     width: 500px;
     display: flex;
     align-items: center;
@@ -195,6 +195,7 @@ body {
     flex-direction: column;
     background-color: var(--trans-bg);
     border-radius: 15px;
+    padding: 30px;
 }
 .emoji{
     display: flex;
@@ -234,7 +235,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
     border: 3px solid transparent;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 20px 20px 100px 10px;
     width: 100%;
     outline: 3px solid var(--stroke-color);
