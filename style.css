@@ -291,3 +291,10 @@ body {
   margin-top: -100px;
   margin-right: -10px;
 }
+
+.creators{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
