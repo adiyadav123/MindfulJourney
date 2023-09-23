@@ -280,6 +280,9 @@ body {
 .about{
   height: 100vh;
 }
+.about_text{
+  text-align: center;
+}
 .starter {
   display: flex;
   align-items: center;
@@ -297,4 +300,23 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.first_two{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.last_two{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kaveesh, .aditya, .anay, .shrinjani{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kaveesh img, .aditya img, .anay img, .shrinjani img {
+  height: 50%;
+  width: 50%;
 }
