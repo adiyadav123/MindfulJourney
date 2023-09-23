@@ -11,7 +11,7 @@
 
 <br>
 
-> Link - https://adiyadav123.github.io/MindfulJourney/
+> Link - <a href="https://adiyadav123.github.io/MindfulJourney/" target="_blank">Click me.</a>
 
 <br>
 
