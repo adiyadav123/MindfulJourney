@@ -46,7 +46,26 @@ body {
   box-shadow: 0 0 20px rgb(232, 231, 231);
   background-color: var(--yellow-bg);
   color: #000000;
+  transition: all ease 0.5s;
 }
+.bg-yellow-color-black:hover{
+  transform: translateX(-10px);
+}
+.float-hover{
+  transition: all ease 0.5s;
+  box-shadow: 0 0 30px rgb(232, 231, 231);
+  border-radius: 15px;
+  margin: 20px;
+  cursor: pointer;
+}
+.float-hover:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 0 50px rgb(232, 231, 231);
+}
+
+
+
+
 
 
 
