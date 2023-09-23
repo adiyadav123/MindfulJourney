@@ -196,3 +196,27 @@ body {
     background-color: var(--trans-bg);
     border-radius: 15px;
 }
+.emoji{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 30px;
+}
+.emo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px ;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    transition: all ease 0.5s;
+}
+.emo:hover {
+    background-color: #704a1476;
+}
+.emo:active {
+    box-shadow: inset 0 0 10px #030200cc;
+}
