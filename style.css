@@ -51,14 +51,40 @@ body {
 .bg-yellow-color-black:hover{
   transform: translateX(-10px);
 }
-.float-hover{
+.float-hover-one, .float-hover-two, .float-hover-three, .float-hover-four {
   transition: all ease 0.5s;
   box-shadow: 0 0 30px rgb(232, 231, 231);
   border-radius: 15px;
+  padding: 20px;
   margin: 20px;
   cursor: pointer;
 }
-.float-hover:hover{
+
+.float-hover-one{
+  background-image: url('./assets/about-back/kaveesh.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.float-hover-two{
+  background-image: url('./assets/about-back/aditya.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.float-hover-three{
+  background-image: url('./assets/about-back/shrinjani.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.float-hover-four{
+  background-image: url('./assets/about-back/anay.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.float-hover-one:hover, .float-hover-two:hover, .float-hover-three:hover, .float-hover-four:hover{
   transform: translateY(-10px);
   box-shadow: 0 0 50px rgb(232, 231, 231);
 }
