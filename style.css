@@ -323,3 +323,6 @@ body {
   height: 50%;
   width: 50%;
 }
+.info .class-name{
+ font-style: italic;
+}
