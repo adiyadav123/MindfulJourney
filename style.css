@@ -28,14 +28,25 @@ body {
   --trans-bg: #e3e6e8ba;
   --container-back: #cfdce8;
   --stroke-color: #253d55;
+  --yellow-bg: #FFBB5C;
 }
 .light{
   font-weight: 400;
 }
-
-
-
-
+.italic{
+  font-style: italic;
+}
+.stroke-light{
+  color: transparent;
+  -webkit-text-stroke: 1px #000000;
+}
+.bg-yellow-color-black{
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgb(232, 231, 231);
+  background-color: var(--yellow-bg);
+  color: #000000;
+}
 
 
 
