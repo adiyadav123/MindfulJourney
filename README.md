@@ -9,6 +9,8 @@
 
 <h3>Preview</h3>
 
+<img src="https://raw.githubusercontent.com/adiyadav123/MindfulJourney/main/assets/mindful_journey.png" height="auto" width="auto">
+
 <br>
 
 > Link - <a href="https://adiyadav123.github.io/MindfulJourney/" target="_blank">Click me.</a>
